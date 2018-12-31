@@ -1,0 +1,562 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: myFirstFont;
+    src: url('simfang.ttf');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+*{
+    font-family: myFirstFont !important;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+header,footer{
+    max-width: 100%;
+    overflow: hidden;
+}
+/*-----------index stylesheet-----------*/
+.content{
+    width:100%;
+    overflow: hidden;
+}
+.content .banner{
+    width: 100%;
+    height: 500px;
+    background: url("../images/banner.png") no-repeat center;
+    background-size: cover;
+}
+.btndiv{
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+}
+.btn{
+    cursor: pointer;
+    width: 246px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ff9000;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.btn img{
+    margin-right: 300px;
+    width: 30px;
+    transition: all 0.4s;
+}
+.btn:hover img{
+    margin-right: 160px;
+    transition: all 0.4s;
+}
+.btn p{
+    width: 96px;
+    height: 66px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    color: #ffffff;
+    line-height: 66px;
+    font-size: 24px;
+    transition: all 0.4s;
+}
+.p2{
+    right: -400px !important;
+}
+.btn:hover .p1{
+    right: -400px;
+    transition: all 0.4s;
+}
+.btn:hover .p2{
+    right: 0 !important;
+    transition: all 0.4s;
+}
+
+
+
+.btndiv .btn{
+    position: absolute;
+    right:24px;
+    bottom: 60px;
+    z-index: 9;
+}
+.personcontain{
+    width: 1200px;
+    margin: 0 auto;
+    height: 477px;
+    position: relative;
+}
+.personcontain .img1{
+    position: absolute;
+    left: 558px;
+    top:56px
+}
+.personcontain .img2{
+    position: absolute;
+    left: 200px;
+    top:200px
+}
+.personcontain .img3{
+    position: absolute;
+    left: 760px;
+    top:200px
+}
+.personcontain .img4{
+    position: absolute;
+    left: 375px;
+    top:113px;
+    animation:antRotate 1.8s linear infinite alternate ;
+    -webkit-animation: antRotate 1.8s linear infinite alternate ;
+    -moz-animation: antRotate 1.8s linear infinite alternate ;
+    -o-animation: antRotate 1.8s linear infinite alternate ;
+
+}
+.personcontain .img5{
+    position: absolute;
+    left: 477px;
+    top:206px
+}
+@-webkit-keyframes antRotate {
+    from{
+        transform: rotate(-10deg);
+        transform-origin: bottom center;
+    }to{
+        transform: rotate(10deg);
+        transform-origin: bottom center;
+    }
+}
+@-moz-keyframes  antRotate{
+    from{
+        transform: rotate(-10deg);transform-origin: bottom center;
+    }to{
+         transform: rotate(10deg);transform-origin: bottom center;
+     }
+}
+@-ms-keyframes  antRotate{
+    from{
+        transform: rotate(-10deg);transform-origin: bottom center;
+    }to{
+         transform: rotate(10deg);transform-origin: bottom center;
+    }
+}
+@-o-keyframes antRotate {
+    from{
+        transform: rotate(-10deg);transform-origin: bottom center;
+    }to{
+         transform: rotate(10deg);transform-origin: bottom center;
+    }
+}
+@keyframes  antRotate{
+    from{
+        transform: rotate(-10deg);transform-origin: bottom center;
+    }to{
+         transform: rotate(10deg);transform-origin: bottom center;
+    }
+}
+.gg1{
+    width: 1200px;
+    margin: 8px auto 40px auto;
+    background: url("../images/gg1.png") no-repeat center;
+    height: 185px;
+    position: relative;
+}
+.gg1 .btn{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right:44px;
+    margin: auto;
+    border-radius: 600px;
+}
+.section{
+    width: 100%;
+    background: url("../images/bac2.png") no-repeat center;
+    background-size: cover;
+    height: 586px;
+}
+.mainsection{
+    width: 1200px;
+    height: 382px;
+    margin:0 auto;
+    position: relative;
+    overflow: visible;
+    padding-top: 148px;
+}
+.mainsection img:first-child{
+    display: block;
+    position: absolute;
+    top:310px;
+    left: -34px;
+    cursor: pointer;
+}
+.mainsection img:last-child{
+    display: block;
+    position: absolute;
+    top:310px;
+    right: -34px;
+    cursor: pointer;
+}
+.hidden{
+    width: 1200px;
+    height: 382px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.mainsection .cardgroup{
+    width: 8000px;
+    height: 382px;
+    overflow: hidden;
+}
+
+
+
+
+.card{
+    width: 268px;
+    height: 382px;
+    background-color: #ffffff;
+    position: relative;
+    float: left;
+    margin:0 16px;
+}
+.card .topcons{
+    width: 224px;
+    padding: 22px 0px;
+    height: 240px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 solid 1px;
+    position: relative;
+    overflow: hidden;
+}
+.card .topcons .icontian{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 38px;
+    margin: auto;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    border:#14adc4 solid 4px;
+    transition: all 0.4s;
+}
+.card:hover .topcons .icontian{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:#ffffff solid 4px;
+    transition: all 0.4s;
+}
+.card .topcons .icontian img{
+    width: 56%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.card .topcons .icontian img:last-child{
+    display: none;
+}
+.card:hover .topcons .icontian img:first-child{
+    display: none;
+}
+.card:hover .topcons .icontian img:last-child{
+    display: block;
+}
+
+
+
+
+.card .topcons .textcons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+.card:hover .topcons .textcons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+.textcons p{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.card .bottomcons{
+    padding: 20px 30px;
+}
+.card .bottomcons p{
+    text-align: center;
+    color: #14adc4;
+    font-size: 24px;
+}
+.card:hover .bottomcons p{
+    text-align: center;
+    color: #ffffff !important;
+}
+.card .bottomcons p+p{
+    font-size: 14px;
+    margin-top: 8px;
+}
+.card .contented{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    left: 0;
+    top:0;
+    z-index: 10;
+}
+.card .bacshow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0f6382;
+    left: 0;
+    top:100%;
+    z-index: 1;
+    transition: all 0.4s;
+}
+.card:hover .bacshow{
+    top:0 !important;
+    transition: all 0.4s;
+}
+.little{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:20px;
+    margin: auto;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border:#ffffff solid 2px;
+}
+.little img{
+    width: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+}
+.gg2{
+    width: 1200px;
+    margin: 40px auto 40px auto;
+    background: url("../images/gg2.png") no-repeat center;
+    height: 185px;
+    position: relative;
+}
+.gg3{
+    width: 1200px;
+    margin: 40px auto 40px auto;
+    background: url("../images/gg3.png") no-repeat center;
+    height: 185px;
+    position: relative;
+}
+.gg2 .btn{
+    background-color: #efd300;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right:44px;
+    margin: auto;
+    border-radius: 600px;
+}
+.rotatediv{
+    height: 610px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.rotatediv .fa1{
+    position: absolute;
+    left:444px;
+    top:44px;
+}
+.rotatediv .fa2{
+    position: absolute;
+    left:821px;
+    top:215px;
+}
+.rotatediv .fa3{
+    position: absolute;
+    left:794px;
+    top:452px;
+}
+.rotatediv .fa4{
+    position: absolute;
+    left:177px;
+    top:452px;
+}
+.rotatediv .fa5{
+    position: absolute;
+    left:97px;
+    top:215px;
+}
+.rotatediv .fa6{
+    position: absolute;
+    left:412px;
+    top:160px;
+    padding: 18px;
+    border: #14adc4 solid 2px;
+    border-radius: 50%;
+}
+.diycontain{
+    background: url("../images/bac3.png") no-repeat center;
+    height: 405px;
+}
+.step{
+    padding-top: 172px;
+}
+.step ul{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.step ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.step ul b{
+    width: 30px;
+    height: 1px;
+    background-color: #ffffff;
+}
+.step ul li p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 22px;
+}
+.step ul li b{
+    color: #2f972e;
+    padding: 0 8px 0 0;
+    font-size: 18px;
+    background-color: transparent;
+}
+.btn p{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p{
+    cursor: default;
+}
