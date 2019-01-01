@@ -74,21 +74,25 @@ header,footer{
     cursor: pointer;
     width: 246px;
     height: 66px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     background-color: #ff9000;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
 }
 .btn img{
+    position:absolute;
+    left: 0;
+    right:0;
+    top:0;
+    bottom: 0;
+    z-index: 9;
+    margin: auto;
     margin-right: 300px;
     width: 30px;
     transition: all 0.4s;
 }
 .btn:hover img{
-    margin-right: 160px;
+    margin-right: 180px;
     transition: all 0.4s;
 }
 .btn p{
